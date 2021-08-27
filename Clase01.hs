@@ -49,3 +49,6 @@ digitoDecenas :: Int -> Int
 digitoDecenas x = if (x>=100)
                        then digitoUnidades (div x 10)
                        else div x 10
+
+digitoUnidades2 :: Int -> Int 
+digitoUnidades2 x = div(mod x 100 - mod x 10) 10
